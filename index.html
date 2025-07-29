@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guillermo Hernandez - Portfólio Digital</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-stars"></div>
+    <div class="background-bubbles"></div>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo-text">Guillermo Hernandez</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="scroll-link">Home</a></li>
+                <li><a href="#about" class="scroll-link">Sobre Mim</a></li>
+                <li><a href="#skills" class="scroll-link">Habilidades</a></li>
+                <li><a href="#portfolio" class="scroll-link">Portfólio</a></li>
+                <li><a href="#contact" class="scroll-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section section">
+            <div class="container">
+                <h1 class="glow-text">Olá, eu sou Guillermo Hernandez, Desenvolvedor Web.</h1>
+                <p class="fade-in">Construindo experiências digitais incríveis.</p>
+                <a href="#portfolio" class="btn-neon scroll-link fade-in-delay">Ver Projetos</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <img src="images/roger79.jpeg" alt="Foto de Perfil de Guillermo Hernandez" class="profile-image fade-in-up">
+                <h2 class="glow-text fade-in">Sobre Mim</h2>
+                <p class="section-description fade-in-delay">Sou um **Desenvolvedor entusiasmado por Inteligência Artificial e soluções Web**, sempre em busca de inovação. Minha paixão é transformar ideias complexas em aplicações funcionais e intuitivas, com foco em resultados.</p>
+                <p class="fade-in-delay-2">Minha jornada na tecnologia me levou a explorar profundamente a **Inteligência Artificial**, onde desenvolvi projetos desafiadores em áreas como processamento de linguagem natural e visão computacional, utilizando Python e TensorFlow. Acredito que a combinação de lógica robusta e um design moderno é a chave para o sucesso digital.</p>
+                <p class="fade-in-delay-3">Estudo Análise e Desenvolvimento de Sistemas. Além da tecnologia, nos meus momentos de lazer, gosto de ler sobre ficção científica e praticar esportes.</p>
+                <p class="fade-in-delay-4">Sou fluente em Espanhol, o que me permite comunicar e explorar conteúdos em outro idioma.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="glow-text fade-in">Minhas Habilidades</h2>
+                <p class="section-description fade-in-delay">Ferramentas e tecnologias que domino.</p>
+                <div class="skills-grid">
+                    <div class="skill-item fade-in-up delay-1">
+                        <i class="fab fa-html5 skill-icon neon-blue-light"></i>
+                        <h3>HTML & CSS</h3>
+                        <p>Estruturação e estilização de interfaces web modernas e responsivas.</p>
+                    </div>
+                    <div class="skill-item fade-in-up delay-2">
+                        <i class="fab fa-js skill-icon neon-purple-light"></i>
+                        <h3>JavaScript</h3>
+                        <p>Desenvolvimento de interatividade e lógica front-end robusta.</p>
+                    </div>
+                    <div class="skill-item fade-in-up delay-3">
+                        <i class="fab fa-python skill-icon neon-green-light"></i>
+                        <h3>Python (IA/ML)</h3>
+                        <p>Criação de soluções de inteligência artificial e processamento de dados.</p>
+                    </div>
+                    <div class="skill-item fade-in-up delay-4">
+                        <i class="fab fa-git-alt skill-icon neon-blue-light"></i>
+                        <h3>Git & GitHub</h3>
+                        <p>Controle de versão e colaboração eficiente em projetos de código.</p>
+                    </div>
+                    <div class="skill-item fade-in-up delay-5">
+                        <i class="fas fa-magic skill-icon neon-purple-light"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Criação de experiências de usuário intuitivas e visualmente atraentes.</p>
+                    </div>
+                    <div class="skill-item fade-in-up delay-6">
+                        <i class="fas fa-database skill-icon neon-green-light"></i>
+                        <h3>Banco de Dados</h3>
+                        <p>Modelagem e gerenciamento de dados com SQL e NoSQL.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2 class="glow-text fade-in">Meus Projetos</h2>
+                <p class="section-description fade-in-delay">Uma amostra do meu trabalho.</p>
+                <div class="portfolio-grid">
+                    <div class="project-card fade-in-up delay-1"> 
+                        <img src="images/project-validator.jpg" alt="Imagem do Projeto Validador de Formulário" class="project-image">
+                        <h3 class="project-title">Validador de Formulário</h3>
+                        <p class="project-description">Uma aplicação web que demonstra validação de campos de formulário (email, senha, etc.) utilizando JavaScript puro.</p>
+                        <div class="project-links">
+                            <a href="./form_validator/index.html" target="_blank" class="btn-project-link"><i class="fab fa-github"></i> Código</a>
+                            <a href="./form_validator/index.html" target="_blank" class="btn-project-link"><i class="fas fa-external-link-alt"></i> Ver App</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in-up delay-2">
+                        <img src="images/project-tasknexus.jpg" alt="Imagem do Projeto TaskNexus" class="project-image">
+                        <h3 class="project-title">TaskNexus: Gerenciador de Produtividade</h3>
+                        <p class="project-description">Aplicativo web moderno para gerenciar tarefas (adicionar, excluir, concluir). Utiliza React.js, Vite e persistência de dados no navegador.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/roger7927/tasknexus-gerenciador" target="_blank" class="btn-project-link"><i class="fab fa-github"></i> Código</a>
+                            <a href="./tasknexus/index.html" class="btn-project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Ver App</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="glow-text fade-in">Entre em Contato</h2>
+                <p class="section-description fade-in-delay">Adoraria conversar sobre novas oportunidades ou projetos.</p>
+
+                <div class="contact-info">
+                    <p class="fade-in-delay-2"><i class="fas fa-envelope neon-blue-light"></i> Email: <a href="mailto:rh623755@gmail.com" class="neon-blue-light">rh623755@gmail.com</a></p>
+                    <p class="fade-in-delay-3"><i class="fab fa-linkedin neon-purple-light"></i> LinkedIn: <a href="https://www.linkedin.com/in/guillermo-hernandez-99334228c" target="_blank" class="neon-purple-light">Guillermo-Hernandez-99334228c</a></p>
+                    <p class="fade-in-delay-4"><i class="fab fa-github neon-green-light"></i> GitHub: <a href="https://github.com/Roger7927" target="_blank" class="neon-green-light">Roger7927</a></p>
+                    <p class="fade-in-delay-5"><i class="fab fa-whatsapp neon-blue-light"></i> WhatsApp: <a href="https://wa.me/5511974662253" target="_blank" class="neon-blue-light">Fale no WhatsApp</a></p>
+                </div>
+
+                <form id="contactForm" class="contact-form fade-in-delay-5">
+                    <div class="form-group">
+                        <label for="form-name">Nome:</label>
+                        <input type="text" id="form-name" name="name" required placeholder="Seu nome completo">
+                        <small class="error-text"></small> </div>
+                    <div class="form-group">
+                        <label for="form-email">Email:</label>
+                        <input type="email" id="form-email" name="email" required placeholder="seu.email@example.com">
+                        <small class="error-text"></small> </div>
+                    <div class="form-group">
+                        <label for="form-message">Mensagem:</label>
+                        <textarea id="form-message" name="message" rows="5" required placeholder="Sua mensagem aqui..."></textarea>
+                        <small class="error-text"></small> </div>
+                    <div id="formMessage" class="form-message"></div> <button type="submit" class="btn-neon">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Guillermo Hernandez. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/guillermo-hernandez-99334228c" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Roger7927" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

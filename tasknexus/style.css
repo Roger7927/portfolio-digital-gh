@@ -1,0 +1,164 @@
+/* Variáveis CSS (Cores Neon) - Importadas do tema principal */
+:root {
+    --bg-dark: #0A0A0A;
+    --neon-purple: #BF00FF;
+    --neon-blue: #00FFFF;
+    --neon-green: #39FF14;
+    --text-light: #E0E0E0;
+    --text-secondary: #AAAAAA;
+    --card-bg: #1A0F2B; /* Fundo mais escuro para cards e containers */
+    --border-glow-alpha: rgba(191, 0, 255, 0.3);
+    --blue-glow-alpha: rgba(0, 255, 255, 0.3);
+    --green-glow-alpha: rgba(57, 255, 20, 0.3);
+}
+
+/* Reset Básico e Estilos Globais para o TaskNexus */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-dark); /* Fundo escuro igual ao portfólio */
+    color: var(--text-light);
+    line-height: 1.6;
+    display: flex; /* Para centralizar o container */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa a altura total da tela */
+    padding: 20px;
+}
+
+.tasknexus-container {
+    background-color: var(--card-bg); /* Fundo do container igual aos cards do portfólio */
+    border-radius: 12px;
+    border: 2px solid var(--neon-blue); /* Borda neon azul */
+    box-shadow: 0 0 25px var(--blue-glow-alpha), 0 0 50px var(--blue-glow-alpha); /* Brilho neon */
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    position: relative; /* Para possíveis efeitos internos */
+    overflow: hidden; /* Garante que elementos não transbordem */
+}
+
+/* Estilo para textos que brilham (similar ao portfólio) */
+.glow-text {
+    color: var(--neon-purple); /* Roxo neon */
+    text-shadow: 0 0 10px var(--neon-purple), 0 0 20px var(--neon-purple);
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: var(--neon-blue); /* Azul neon */
+    text-shadow: 0 0 10px var(--neon-blue);
+}
+
+.tagline {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+/* Seção de Input de Tarefas */
+.task-input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#taskInput {
+    flex-grow: 1; /* Ocupa o espaço restante */
+    padding: 12px 15px;
+    border: 1px solid var(--neon-purple); /* Borda roxa neon */
+    border-radius: 6px;
+    background-color: #0A051A; /* Fundo escuro para o input */
+    color: var(--text-light);
+    font-size: 1em;
+    outline: none; /* Remove o contorno azul padrão do focus */
+    box-shadow: 0 0 5px rgba(191, 0, 255, 0.2); /* Sombra suave */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#taskInput::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+#taskInput:focus {
+    border-color: var(--neon-green); /* Borda verde neon no focus */
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.5); /* Brilho verde no focus */
+}
+
+/* Botão de Adicionar Tarefa (Estilo Neon) */
+#addTaskBtn {
+    padding: 12px 20px;
+    border: 2px solid var(--neon-purple);
+    border-radius: 6px;
+    color: var(--neon-purple);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    background: transparent;
+    box-shadow: 0 0 10px var(--neon-purple), inset 0 0 5px var(--neon-purple);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#addTaskBtn:hover {
+    color: var(--bg-dark); /* Texto escuro no hover */
+    background-color: var(--neon-purple);
+    box-shadow: 0 0 15px var(--neon-purple), 0 0 30px var(--neon-purple), inset 0 0 8px var(--neon-purple);
+    transform: translateY(-2px);
+}
+
+/* Lista de Tarefas */
+.task-list {
+    list-style: none; /* Remove marcadores padrão */
+    text-align: left;
+    max-height: 300px; /* Limita a altura para rolagem */
+    overflow-y: auto; /* Adiciona barra de rolagem quando necessário */
+    padding-right: 10px; /* Espaço para a barra de scroll */
+    margin-bottom: 30px;
+}
+
+/* Estilo da barra de rolagem (WebKit - Chrome/Edge) */
+.task-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.task-list::-webkit-scrollbar-track {
+    background: #2A1F3C; /* Fundo da barra de scroll */
+    border-radius: 10px;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+    background: var(--neon-blue); /* Cor do "polegar" da barra de scroll */
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--neon-blue);
+}
+
+/* Itens da Lista de Tarefas */
+.task-item {
+    background-color: #150A20; /* Fundo mais escuro para cada item */
+    border: 1px solid var(--neon-blue); /* Borda neon azul */
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaça conteúdo e botão de deletar */
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.task-item.completed {
+    text-decoration: line-through; /* Risca o texto se concluída */
+    opacity: 0.7; /* Deixa mais transparente */
+    border-color: var(--neon-green); /* Borda verde neon quando concluída */
+    box-shadow: 0 0
